@@ -1,0 +1,113 @@
+:root {
+    --white: #FFF;
+    --blue: hsl(223, 87%, 63%);
+    --pale-blue: hsl(223, 100%, 88%);
+    --light-red: hsl(354, 100%, 66%);
+    --gray: hsl(0, 0%, 59%);
+    --very-dark-blue: hsl(209, 33%, 12%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+p {
+    font-size: 20px;
+}
+
+section.coming-soon {
+    width: 100%;
+}
+
+section.coming-soon .container {
+    width: calc(100% - 40px);
+    max-width: 1110px;
+    margin: 20px auto;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section.coming-soon .container header img {
+    padding-bottom: 30px;
+}
+
+section.coming-soon .container header h1 {
+    font-size: 2.5em;
+    font-weight: 300;
+    color: var(--gray);
+    padding-bottom: 12px;
+}
+
+section.coming-soon .container header h1 b {
+    color: var(--very-dark-blue);
+    padding-bottom: 24px;
+}
+
+section.coming-soon .container form input, section.coming-soon .container form button{
+    display: inline-block;
+}
+
+section.coming-soon .container form input {
+    margin-top: 20px;
+    width: 300px;
+    height: 50px;
+    border-radius: 30px;
+    border: 1px solid var(--gray);
+    padding-left: 20px;
+}
+
+section.coming-soon .container form button {
+    height: 50px;
+    padding: 0px 40px;
+    border-radius: 30px;
+    color: var(--white);
+    border: none;
+    background-color: var(--blue);
+    font-weight: 500;
+}
+
+section.coming-soon .container > img {
+    padding-top: 60px;
+    width: 100%;
+    max-width: 600px;
+}
+
+section.coming-soon .container .footer ul {
+    list-style: none;
+    padding: 30px 0;
+}
+
+section.coming-soon .container .footer ul li {
+    display: inline;
+    padding: 0 15px;
+}
+
+section.coming-soon .container .footer {
+    color: var(--gray);
+}
+
+@media (max-width: 36em) {
+    section.coming-soon .container header h1 {
+        font-size: 1.6em;
+        padding-bottom: 18px;
+    }
+
+    section.coming-soon .container > p {
+        font-size: 16px;
+    }
+
+    section.coming-soon .container form button {
+        width: 300px;
+        margin-top: 12px;
+    }
+
+    section.coming-soon .container .footer p {
+        font-size: 16px;
+    }
+}
